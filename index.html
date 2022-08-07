@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/78863e9374.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="options-cont">
+        <i class="fas fa-times"></i>
+    </div>
+
+
+    <div class="tools-cont scale-tools">
+      <img class = "pencil" src="images/pencil.svg" alt="">
+      <img class = "eraser" src="images/eraser.svg" alt="">
+      <img class="notes" src="images/images.svg" alt="">
+      <img class = "download"src="images/download.svg" alt="">
+      <img class = "clear-screen"src="images/icons8-erase-67.svg" alt="">
+    </div>
+
+
+    <div class="pencil-tool-cont">
+        <div class="pencil-width-cont">
+            <input class="pencil-width" type="range" name="range" id="range" min="2" max="10" value="2">
+        </div>
+        <div class="pencil-color-cont">
+            <div class="black pencil-color"></div>
+            <div class="blue pencil-color"></div>
+            <div class="red pencil-color"></div>
+        </div>
+    </div>
+
+
+    <div class="eraser-tool-cont">
+        <div class="eraser-width-cont">
+            <input class = "eraser-width" type="range" min="2" max="40" value="3">
+        </div>
+    </div>
+
+    <canvas></canvas>
+    
+    <script src="tools.js"></script>
+    <script src="canvas.js"></script>
+</body>
+</html>

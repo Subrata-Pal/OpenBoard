@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin : 0px;
+    padding : 0px;
+}
+.options-cont{
+    background-color: #e9ecef;
+    height: 3.1rem;
+    width : 3rem;
+    position : absolute;
+    top : 1.7rem;
+    left : 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.tools-cont{
+    display: flex;
+    width: 50rem;
+    height : 10vh;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    position: absolute;
+    top : 1.6rem;
+    left :25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.scale-tools{
+    animation-name: scale-tools;
+    animation-duration: 0.5s;
+}
+@keyframes scale-tools
+{
+    0%{
+      transform : scale(0.1);
+    }
+    100%{
+      transform : scale(1);
+    }
+}
+
+img{
+    display: block;
+    padding: 5px;
+}
+.pencil-tool-cont{
+    width:10rem;
+    position: absolute;
+    top: 5.5rem;
+    left: 22rem;
+    background-color: #2a9d8f;
+    display: none;
+}
+.pencil-width-cont{
+    display: flex;
+    justify-content: center;
+    height : 2rem;
+    border-radius: 5px;
+}
+.pencil-color-cont{
+    height:3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #264653;
+}
+.pencil-color{
+    width : 1.9rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.black{background-color: black;}
+.blue{background-color: #0077b6;}
+.red{background-color: red;}
+
+.eraser-tool-cont{
+   background-color: aquamarine;
+   width:10rem;
+   position: absolute;
+   top: 5.5rem;
+   left: 30rem;
+   display: none;
+}
+.eraser-width-cont{
+    height : 2rem;
+    display: flex;
+    justify-content: center;
+    height : 2rem;
+}
+
+
+.sticky-cont{
+    height : 16rem;
+    width : 15.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top : 10rem;
+    left : 15rem;
+}
+.header-cont{
+    height :2rem;
+    background-color: #1e96fc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #e5e5e5;
+}
+.note-cont{
+    height : 14rem;
+}
+.header-cont > *{
+    height : 1.3rem;
+    width : 1.3rem;
+    margin-right : 0.5rem;
+    border-radius: 50%;
+    display: flex;
+}
+textarea{
+    width:100%;
+    height:100%;
+    outline: none;
+    resize: none;
+    border: none;
+}
